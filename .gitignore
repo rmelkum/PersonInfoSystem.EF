@@ -1,0 +1,24 @@
+# Build outputs
+bin/
+obj/
+
+# IDE folders
+.idea/
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Secrets / sensitive data
+appsettings.json
+appsettings.Development.json
+secrets.json
+
+# Logs
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
