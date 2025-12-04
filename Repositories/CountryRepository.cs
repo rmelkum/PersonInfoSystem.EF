@@ -6,7 +6,7 @@ using PersonInfoSystem.Models;
 
 namespace PersonInfoSystem.Repositories;
 
-public class CountryRepository :IRepository<CountryEntity>
+public class CountryRepository :ICRUDRepository<CountryEntity>
 {
     private readonly PersonInfoDBContext _context;
 
@@ -43,7 +43,7 @@ public class CountryRepository :IRepository<CountryEntity>
         }
     }
 
-    public CountryEntity GetById(int id)
+    public CountryEntity? GetById(int id)
     {
         try
         {

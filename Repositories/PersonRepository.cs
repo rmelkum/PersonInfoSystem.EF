@@ -6,7 +6,7 @@ using PersonInfoSystem.Models;
 
 namespace PersonInfoSystem.Repositories;
 
-public class PersonRepository : IRepository<PersonEntity>
+public class PersonRepository : ICRUDRepository<PersonEntity>
 {
     private readonly PersonInfoDBContext _context;
 
@@ -42,7 +42,7 @@ public class PersonRepository : IRepository<PersonEntity>
         }
     }
 
-    public PersonEntity GetById(int id)
+    public PersonEntity? GetById(int id)
     {
         try
         {

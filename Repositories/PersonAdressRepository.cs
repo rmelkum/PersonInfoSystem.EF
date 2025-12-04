@@ -43,7 +43,7 @@ public class PersonAddressRepository
         }
     }
 
-    public PersonAddressEntity GetById(int id)
+    public PersonAddressEntity? GetById(int id)
     {
         try
         {
